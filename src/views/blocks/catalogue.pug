@@ -1,0 +1,87 @@
+mixin block(title)
+  .catalogue-block__info
+    span.catalogue-block__title=title
+    .catalogue-block__price-container
+      span.catalogue-block__price 13900 р.
+      span.catalogue-block__old-price 27800 р.
+    a(href="#popup2").popup_link.catalogue-block__discount Нажмите и получите рассрочку от 580 р./мес. Первый взнос – 0 р.
+    ul.catalogue-block__list
+      li.catalogue-block__item Производство: Италия
+      li.catalogue-block__item Мех: лиса
+      li.catalogue-block__item Российский размер: 40-56
+      li.catalogue-block__item Длина: 95 см
+      li.catalogue-block__item Мех отстёгивается
+      li.catalogue-block__item Температурный режим: до –35°С
+    .catalogue-block-more
+      button.catalogue-block-more__btn Нажмите, чтобы открыть полное описание
+      .catalogue-block-more__dropdown
+        .catalogue-block-more__content
+          p Модная парка с мехом лисы, выполненная из материала темно-зеленого цвета, станет незаменимой вещью в вашем гардеробе. Шикарный лисий мех придает изделию респектабельность, обеспечивая надежную защиту от сильных холодов, характерных для сурового российского климата. Благодаря плотному наружному материалу, вам не страшны ни сильные ветра, ни осадки. Продуманный до мелочей фасон куртки обеспечит комфорт в любой ситуации, позволяя свободно двигаться. Парка на меху имеет специальные застежки и утяжки, которые помогут подчеркнуть изящные линии вашей фигуры, предотвращая при этом проникновение холодного воздуха под края рукавов и подола.
+  a(href="#popup1").popup_link.catalogue-block__discount-button.promo-style ЗАБРОНИРОВАТЬ ЦЕНУ СО СКИДКОЙ
+.catalogue.block(id='catalogue')
+  .container
+    .block__head
+      .block__title КАТАЛОГ ПАЛЬТО
+    .catalogue__container
+      //block
+      .catalogue-block
+        .catalogue-block__container
+          .catalogue-block__gallery
+            .catalogue-block__slider
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3037-3866-4330-b032-353833333365/ON857cEGNWE.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild6131-6636-4235-a464-376664373533/S2rUnoTqClg.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3037-3866-4330-b032-353833333365/ON857cEGNWE.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3238-6434-4663-b730-343733633739/13BpYEwuGKI.jpg", alt="").lazy
+            .catalogue-block__nav-slider
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3037-3866-4330-b032-353833333365/ON857cEGNWE.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild6131-6636-4235-a464-376664373533/S2rUnoTqClg.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3037-3866-4330-b032-353833333365/ON857cEGNWE.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3238-6434-4663-b730-343733633739/13BpYEwuGKI.jpg", alt="").lazy
+          +block('PARKA FOX GREEN GOLDEN')
+      //block
+      .catalogue-block
+        .catalogue-block__container
+          .catalogue-block__gallery
+            .catalogue-block__slider
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3465-3633-4165-b936-626564336333/qjA9hnqDLIs.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3865-3161-4937-a536-336163393163/G9cMXedYQtg.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild6163-3334-4531-a663-326430326566/LbxUDA6QPRs.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3163-3230-4338-a637-626636386334/WNYMClxiDg4.jpg", alt="").lazy
+            .catalogue-block__nav-slider
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3465-3633-4165-b936-626564336333/qjA9hnqDLIs.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3865-3161-4937-a536-336163393163/G9cMXedYQtg.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild6163-3334-4531-a663-326430326566/LbxUDA6QPRs.jpg", alt="").lazy
+              .catalogue-block__slide
+                .catalogue-block__slide-container
+                  img(data-src="https://static.tildacdn.com/tild3163-3230-4338-a637-626636386334/WNYMClxiDg4.jpg", alt="").lazy
+          +block('PARKA BENGAL GREY')
