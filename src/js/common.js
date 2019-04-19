@@ -68,9 +68,10 @@ function nav() {
 function timerMain() {
   $('[data-countdown]').each(function() {
     var $this = $(this), finalDate = $(this).data('countdown');
+    console.log(finalDate);
     $this.countdown(finalDate, function(event) {
       $this.html(event.strftime(''
-      + '<div><span>%d</span> Дней</div>'
+      + '<div><span>%D</span> Дней</div>'
       + '<div><span>%H</span> Часов</div>'
       + '<div><span>%M</span> Минут</div>'
       + '<div><span>%S</span> Секунд</div>'));
